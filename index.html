@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Final Project for Advanced Client Web Development Intensive (INFO1-CE9800)</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="styles/jquery-ui-1.10.3.custom.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+		<script src="scripts/myscript.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/mystyles.css">
+	</head>
+	<body>
+		<div class ="responsive">
+			<div class="resp_inner"><span class="wide">I'm Responsive</span><span class="narrow">Told Ya So!</span></div>
+			<div class ="resp_inner"><span class="wide">Me, Too!</span><span class="narrow">Told Ya So!</span></div>
+			<div class="resp_inner"><span class="wide">So Am I</span><span class="narrow">Told Ya So!</span></div>
+		</div>
+		<h1 class="clear">Brooklyn Central</h1>
+		<p class="intro">Welcome to Brooklyn Central, your source for the latest information about America's fourth-largest city.</p>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1" class="hider">Weather</a></li>
+				<li><a href="#tabs-2" class="hider">Videos</a></li>
+				<li><a href="#tabs-3" id="mapper">Google Map</a></li>
+			</ul>
+			<div id="tabs-1">
+				<span id="icon"></span><span id="weather"></span><br />
+				Current Temperature: <span id="temp"></span><br />
+				Humidity: <span id="humidity"></span><br />
+				Wind: <span id="wind"></span><br />
+				Precipitation: <span id="precip"></span><br />
+				<small>Source: <a href="http://www.wunderground.com/" target="_blank">Weather Underground</a></small>
+			</div>
+			<div id="tabs-2">
+				<div id="video"></div>
+			</div>
+			<div id="tabs-3">
+			</div>
+		</div>
+		<div id="map-canvas"></div>
+	</body>
+</html>
